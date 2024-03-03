@@ -1,0 +1,198 @@
+/* Reset some basic elements to avoid default browser styling */
+body, h1, input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* Apply a full-screen flex container */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000; /* In case the video doesn't load */
+}
+
+/* Set the video container to be centered and of a specific size */
+#video-container {
+    position: relative;
+    width: 100%; /* Set the width to a percentage of the viewport */
+    max-width: 800px; /* Maximum width */
+    aspect-ratio: 16 / 12; /* Maintain a 16:9 aspect ratio */
+   
+    overflow: hidden; /* Hide the overflow to maintain aspect ratio */
+}
+
+/* Adjust the video to fit the container */
+#background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* This will cover the container with the video while preserving aspect ratio */
+}
+
+/* Center the content on the video */
+.title {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #FFFFFF; /* Make text color white for visibility */
+  text-shadow: 2px 2px 4px #000000;
+}
+
+/* Style the heading */
+h1 {
+    font-size: 2.5em; /* Increase font size */
+    text-shadow: 2px 2px 4px #000;
+}
+
+.branding {
+  position: absolute;
+  text-align: center;
+  color: #ffffff; /* Or any color that matches your design */
+}
+
+.logo-container {
+  position: absolute;
+  text-align: center;
+}
+
+.left-logo {
+  bottom: 220px;
+  left: 80px;
+}
+
+.right-logo {
+  bottom: 220px;
+  right: 80px;
+}
+
+.logo {
+  width: 100px; /* Adjust as needed */
+  height: auto;
+}
+
+.logo-text {
+  display: block; /* Ensure text appears below the logo */
+  color: #ffffff; /* Or any color that matches your design */
+  margin-top: 5px;
+  font-size: 1.25em; /* Adjust as needed */
+  text-shadow: 2px 2px 4px #000000; /* Text shadow for better readability */
+}
+
+
+/* Existing styles up here */
+
+/* New styles for the input box */
+.code-entry {
+  position: absolute;
+  bottom: 20px; /* Adjust as needed */
+  left: 38%; /* Center horizontally */
+  transform: translateX(-50%); /* Center align the element */
+  width: auto; /* Auto-width based on content */
+}
+
+#cat-count {
+  font-size: 0.8em;
+  padding: 8px 16px; /* Balanced padding */
+  border-radius: 20px; /* More pronounced rounded corners for a playful look */
+  border: 2px solid #FFA07A; /* Color picked from the image for consistency */
+  background: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+  color: #5D3FD3; /* A purple tone that matches the image's color palette */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  outline: none; /* Remove focus outline for aesthetic reasons */
+  transition: all 0.3s ease; /* Smooth transition for interactions */
+  width: 150px; /* Smaller width for the input */
+  padding: 5px; /* Smaller padding for the input */
+  margin-right: 0px; /* Spacing between the input and the button */
+}
+
+#cat-count:focus {
+  background: rgba(255, 255, 255, 0.8); /* Lighter background on focus */
+}
+
+
+
+#submit-btn {
+  padding: 5px 15px;
+  margin-left: 10px; /* Spacing between the input field and the button */
+  border-radius: 20px; /* Rounded corners for a playful look */
+  border: none; /* No border for a cleaner look */
+  background-color: #FFA07A; /* A color that matches your theme */
+  color: white; /* Text color */
+  font-size: 1em; /* Matching the input field font size */
+  cursor: pointer; /* Changes the cursor to signify it's clickable */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: background-color 0.3s ease; /* Smooth transition for interactions */
+  transition: transform 0.1s ease; /* Smooth transition for the scaling effect */
+}
+
+
+#submit-btn:hover {
+  background-color: #ff7f50; /* Darker shade on hover for feedback */
+}
+
+#submit-btn:active {
+  transform: scale(0.95); /* Triggers when the button is clicked */
+}
+
+
+/* Error message styling */
+#error-message {
+  color: red;
+  opacity: 0; /* Start with the message transparent */
+  transition: opacity 1s ease; /* Smooth transition for the fade effect */
+  display: none; /* Keep it hidden until an error occurs */
+}
+/* Error message styling */
+#correct-message {
+  color: green;
+  opacity: 0; /* Start with the message transparent */
+  transition: opacity 1s ease; /* Smooth transition for the fade effect */
+  display: none; /* Keep it hidden until an error occurs */
+}
+
+.highlight {
+  color: #A020F0; /* Neon purple color */
+  text-shadow: 0 0 5px #A020F0, 0 0 10px #A020F0; /* Glowing effect */
+}
+
+.hidden {
+  display: none;
+  color: red; /* Color for the incorrect message */
+  margin-top: 10px; /* Space above the message */
+}
+
+.message-visible {
+  display: block; /* Show the message */
+}
+
+#message-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: ##00FF00; /* Neon purple color for the message text */
+  font-weight: bold;
+  font-size: 3em; /* Larger font size for visibility */
+  text-shadow: 0 0 5px ##00FF00, 0 0 10px ##00FF00; /* Glowing effect */
+   text-shadow: 2px 2px 4px #000000;
+    top: -80%; /* Adjust this value as needed to move the message up */
+
+  padding: 10px;
+  border-radius: 5px;
+
+}
+
+.hidden {
+  display: none;
+}
+
+

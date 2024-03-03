@@ -1,0 +1,53 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <title>How Many Cats?</title>
+    <link rel="stylesheet" href="CountCats.css">
+</head>
+<body>
+
+    <div id="video-container">
+        <video autoplay loop muted id="background-video">
+            <source src="C:\Users\James\Documents\Aetherium 3301\Puzzle cats\animated cat.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="title" id="title">
+  <h1>How many <span class="highlight">cats</span> in the cosmos?</h1>
+</div>
+	
+	<div id="message-area"></div>
+	
+	 <div class="code-entry">
+  <input type="number" id="cat-count" placeholder="Number of cats...">
+  <button id="submit-btn">Submit</button>
+  <!-- Hidden message element for incorrect attempts -->
+  <p id="error-message" class="hidden">Incorrect number. Try again!</p>
+  <p id="correct-message" class="hidden">Correct Cat Counter!!</p>
+</div>
+	
+	
+<!-- Left logo and text -->
+<div class="logo-container left-logo">
+  <img src="C:\Users\James\Documents\Aetherium 3301\Puzzle cats\Atherian_logo_enhanced-removebg.png" alt="Left Logo" class="logo">
+  <p class="logo-text">Aetherium 3301</p>
+</div>
+
+<!-- Right logo and text -->
+<div class="logo-container right-logo">
+  <img src="C:\Users\James\Documents\Aetherium 3301\Puzzle cats\Atherian_logo_enhanced-removebg.png" alt="Right Logo" class="logo">
+  <p class="logo-text">Aetherium 3301</p>
+</div>
+
+<audio id="correct-sound" src="C:\Users\James\Documents\Aetherium 3301\Puzzle cats\claps-29454.mp3" preload="auto"></audio>
+<audio id="incorrect-sound" src="C:\Users\James\Documents\Aetherium 3301\Puzzle cats\buzzer-or-wrong-answer-20582.mp3" preload="auto"></audio>
+
+
+    <script src="CatCount.js"></script>
+</body>
+</html>
+
+</html>
