@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // Redirect after a short delay
       setTimeout(() => {
         window.location.href = correctNumberUrl;
-      }, 600000);
+      }, 6000);
     } else {
       // Update message area with incorrect message
 	  titleElement.classList.add('hidden');
