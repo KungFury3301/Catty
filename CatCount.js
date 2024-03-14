@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
    
       // Redirect to the 'how to stop sucking' page
       window.location.href = wrongNumberUrl;
-	     }, 6000);
+	     }, 3000);
 	   
     }
   });
