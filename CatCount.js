@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const enteredNumber = catCountInput.value.trim();
 	const titleElement = document.getElementById('title'); // Get the title element
 
-    if (enteredNumber === '10') { // Assuming 10 is the correct answer
+    if (enteredNumber === '9') { // Assuming 10 is the correct answer
       // Update message area with correct message
 	  titleElement.classList.add('hidden');
 	  correctSound.play();
